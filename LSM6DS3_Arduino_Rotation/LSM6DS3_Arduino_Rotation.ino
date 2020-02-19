@@ -41,11 +41,11 @@ void setup() {
 void loop() {
    static unsigned long previousTime = millis();
    unsigned long currentTime = millis();
-      if (currentTime - previousTime >= 1000/SAMPLE_RATE) {
-         // printValues();
-         printRotationAngles();
-         previousTime = millis();
-      }
+   if (currentTime - previousTime >= 1000/SAMPLE_RATE) {
+      // printValues();
+      printRotationAngles();
+      previousTime = millis();
+   }
 }
 
 
